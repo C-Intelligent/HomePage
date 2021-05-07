@@ -7,21 +7,54 @@
     <title>C-Intelligent</title>
 
     <style>
+        
         body {
+            /**
             background-image: url(img/5.png);
+            **/
             background-repeat: no-repeat;
             background-position: center 40px;
-            color: white;
+            
             background-attachment: fixed;
+            
+            
         }
+        
         .c1 {
             margin-top: 150px;
+            color: white;
+        }
+
+        .bkg {
+            /**
+            width: 500px;
+            height: 300px;
+            **/
+            width: auto;
+            height: auto;
+            background-size: 100% 100%;
         }
     </style>
 
+    <script>
+        var imgs = ["5.png","6.jpg", "7.jpg", "8.jpg"];
+        var s = 0;
+        function bkg(){
+            var by = document.getElementById("body"); //通过id获取元素
+            by.style.background = "url('img/"+imgs[s]+"') no-repeat center 40px fixed";
+            
+            s++;
+            if(s==imgs.length){s = 0;}
+        };
+        window.onload = function(){
+            setInterval("bkg()",3000); //每隔一秒执行一次前面方法
+        };
+    </script>
+
     
 </head>
-<body>
+<body id="body">
+    <div id="bkg" class="bkg"></div>
     <center>
         <div class="c1">
             <h1>地表最强小戴！</h1>
