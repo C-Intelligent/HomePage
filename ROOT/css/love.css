@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?tomleg');
+    src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+      url('../fonts/icomoon.woff?tomleg') format('woff'),
+      url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 版心 */
+.w {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+body {
+    background-color: rgb(248, 236, 221);
+}
+
+.head_title {
+    height: 80px;
+    /* background-color: #fff; */
+}
+
+.head_title h1 {
+    text-align: center;
+    line-height: 80px;
+    font-size: 36px;
+}
+
+.main_box {
+    position: relative;
+    height: 400px;
+    /* background-color: pink; */
+}
+
+.main_box button{
+    height: 100px;
+    width: 100px;
+    /* background-color: pink; */
+    background-color: transparent;
+}
+
+.main_box .last_img {
+    position: absolute;
+    top: 150px;
+    left: 60px;
+}
+
+.main_box .last_img h4::after {
+    font-size: 48px;
+    font-family: 'icomoon';
+    content: '\ea44';
+    color: rgba(255, 255, 255, 0.849);
+}
+.main_box .next_img h4::before {
+    font-size: 48px;
+    font-family: 'icomoon';
+    content: '\ea42';
+    color: rgba(255, 255, 255, 0.849);
+}
+
+.main_box .next_img {
+    position: absolute;
+    top: 150px;
+    right: 60px;
+}
+
+.main_box .photo {
+    text-align: center;
+}
+
+.button_title {
+    height: 80px;
+    /* background-color: #fff; */
+}
+
+.button_title h1 {
+    text-align: center;
+    line-height: 80px;
+    font-size: 36px;
+}

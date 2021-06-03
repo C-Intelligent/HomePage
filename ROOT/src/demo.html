@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-Intelligent</title>
+
+    <style>
+        
+        body {
+            /**
+            background-image: url(img/5.png);
+            **/
+            background-repeat: no-repeat;
+            background-position: center 40px;
+            
+            background-attachment: fixed;
+            
+            
+        }
+        
+        .c1 {
+            margin-top: 150px;
+            color: white;
+        }
+
+        .bkg {
+            /**
+            width: 500px;
+            height: 300px;
+            **/
+            width: auto;
+            height: auto;
+            background-size: 100% 100%;
+        }
+    </style>
+
+    <script>
+        var imgs = ["5.png","6.jpg", "7.jpg", "8.jpg"];
+        var s = 0;
+        function bkg(){
+            var by = document.getElementById("body"); //通过id获取元素
+            by.style.background = "url('img/"+imgs[s]+"') no-repeat center 40px fixed";
+            
+            s++;
+            if(s==imgs.length){s = 0;}
+        };
+        window.onload = function(){
+            setInterval("bkg()",3000); //每隔一秒执行一次前面方法
+        };
+    </script>
+
+    
+</head>
+<body id="body">
+    <div id="bkg" class="bkg"></div>
+    <center>
+        <div class="c1">
+            <h1>地表最强小戴！</h1>
+            <h1>要照顾好自己！</h1>
+            <h1>要天天想师兄！</h1>
+            <h1>只能喜欢师兄！</h1>
+        </div>
+        
+        <!--
+
+        
+        <h1>这个人说可以请你吃饭！</h1>
+        <br />
+        <a href="src/shimei.html" target="_self">
+            <img src="img/1.jpg" alt="你男朋友没了" 
+            title="这是一个有趣的人" width="400" />
+        </a>
+        
+        <br />
+        <a href="./bin/putty.exe">putty</a>
+        <br />
+        <a href="./bin/mtputty.exe">mtputty</a>
+        -->
+
+        <!-- <h4>
+        <a href="src/shimei.html" target="_self">师妹</a>
+        </h4> -->
+    </center>
+    
+    <br />
+</body>
+</html>
