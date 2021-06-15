@@ -50,3 +50,12 @@ body {
     font-size: 108px;
 
 }
+
+.mobile_net {
+    display: block;
+    height: 50px;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+}
